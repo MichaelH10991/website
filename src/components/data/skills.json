@@ -24,10 +24,5 @@
     "name": "Linux",
     "level": "Adept",
     "additionalInfo": "some additonal info"
-  },
-  {
-    "name": "Something",
-    "level": "Adept",
-    "additionalInfo": "some additonal info"
   }
 ]

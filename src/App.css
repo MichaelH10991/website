@@ -50,7 +50,7 @@ html {
   -webkit-background-clip: text;
 }
 
-.p { 
+.p {
   background-image: linear-gradient(to left, #553c9a, #b393d3);
   color: transparent;
   background-clip: text;
@@ -115,8 +115,9 @@ html {
 .card {
   display: flex;
   transform-style: preserve-3d;
-  transition: 150ms;
-  transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translate(var(--translate-y, 0));
+  transition: 2000ms;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translate(var(--translate-y, 0));
   /* height: 250px; */
   /* width: 200px; */
   /* display: inline-block; */
@@ -131,12 +132,12 @@ html {
 
 .card:hover {
   --translate-y: -2px;
-  box-shadow: 0 0 5px 2px rgba(85,60,154,1);
+  box-shadow: 0 0 5px 2px rgba(85, 60, 154, 1);
   opacity: 1;
 }
 
 .card.flip {
-  --rotate-y: 180deg
+  --rotate-y: 180deg;
 }
 
 .card .front {
