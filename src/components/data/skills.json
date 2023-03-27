@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Node.js",
+    "level": "Experienced",
+    "additionalInfo":
+      "some additonal info, some additonal info, some additonal info, some additonal info, some additonal info, some additonal info, "
+  },
+  {
+    "name": "React.js",
+    "level": "Intermediate",
+    "additionalInfo": "some additonal info"
+  },
+  {
+    "name": "Mongodb",
+    "level": "Adept",
+    "additionalInfo": "some additonal info"
+  },
+  {
+    "name": "Docker",
+    "level": "Adept",
+    "additionalInfo": "some additonal info"
+  },
+  {
+    "name": "Linux",
+    "level": "Adept",
+    "additionalInfo": "some additonal info"
+  },
+  {
+    "name": "Something",
+    "level": "Adept",
+    "additionalInfo": "some additonal info"
+  }
+]

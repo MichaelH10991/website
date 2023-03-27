@@ -1,57 +1,45 @@
-// import logo from "./logo.svg";
-import Skills from "./components/skills";
-import Header from "./components/header";
+import { Skills, Header, Section } from "./components/";
+import { paragraph } from "./components/data";
+
 import "./App.css";
-console.log(process.env)
+
+const info = process.env.REACT_APP_TIMESTAMP
+  ? `Last deployment: ${process.env.REACT_APP_TIMESTAMP}`
+  : "";
+
+const appStatus = process.env.REACT_APP_STATUS
+  ? `This app is in ${process.env.REACT_APP_STATUS}. Check back for updates!`
+  : "This app is in development. Check back for updates!";
+
+const appEnv = process.env.REACT_APP_ENV || "";
+
 function App() {
   return (
     <>
       <div className="App">
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header> */}
         <div className="App-content">
           <div className="Header">
             <Header />
           </div>
-          <div className="Content-container">
-            <div className="Sub-container">
-              <div className="Sub-heading">Skills</div>
-              <Skills />
+          <Section header={"Skills"}>
+            <Skills />
+          </Section>
+          <Section header={"Experience"}>
+            <div style={{ padding: 1 + "em" }}>{paragraph.big}</div>
+          </Section>
+          <Section header={"Education"}>
+            <div style={{ padding: 1 + "em" }}>{paragraph.big}</div>
+          </Section>
+          <Section header={"App Info"}>
+            <div style={{ padding: 0.5 + "em" }}>
+              {appStatus}
+              <br />
+              {info}
             </div>
-          </div>
-          <div className="Content-container">
-            <div className="Sub-container">
-              <div className="Sub-heading">Infomation</div>
-              <div style={{ padding: 1 + "em" }}>
-                {process.env.REACT_APP_STATUS ? 
-                  `This app is in ${process.env.REACT_APP_STATUS}. check back for updates!` : 
-                  "This app is in development. Check back for updates!"
-                }
-                <br/>
-                {process.env.REACT_APP_TIMESTAMP ?
-                  `Last deployment: ${process.env.REACT_APP_TIMESTAMP}` :
-                  ""
-                }
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style={{textAlign: "right"}}>
-          {process.env.REACT_APP_ENV ? process.env.REACT_APP_ENV : ""}
+          </Section>
         </div>
       </div>
+      {/* <div style={{ position: "absolute", bottom: 0, right: 0 }}>{appEnv}</div> */}
     </>
   );
 }
