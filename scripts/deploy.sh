@@ -2,7 +2,7 @@
 timestamp=$(date)
 export REACT_APP_TIMESTAMP=$timestamp
 
-BUCKET="s3://mike-bucket-foo/"
+BUCKET="s3://michaeljh.com/"
 
 # build the app
 npm install

@@ -1,6 +1,6 @@
 # My Website
 
-The code for my static website which can be found here: http://mike-bucket-foo.s3-website.eu-west-2.amazonaws.com/
+The code for my static website which can be found here: http://michaeljh.com
 
 # Scripts
 
