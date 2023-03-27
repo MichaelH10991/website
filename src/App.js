@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import Skills from './components/skills'
-import Header from './components/header'
-import './App.css';
+import logo from "./logo.svg";
+import Skills from "./components/skills";
+import Header from "./components/header";
+import "./App.css";
 
 function App() {
   return (
@@ -21,18 +21,19 @@ function App() {
         </a>
       </header> */}
       <div className="App-content">
-        <div className="Header" >
+        <div className="Header">
           <Header />
         </div>
-        <div className='Content-container'>
-          <div className='Sub-container'>
-          <Skills />
+        <div className="Content-container">
+          <div className="Sub-container">
+            <div className="Sub-heading">Skills</div>
+            <Skills />
           </div>
         </div>
-        <div className='Content-container'>
-          <div className='Sub-container'>
+        <div className="Content-container">
+          <div className="Sub-container">
+            <div className="Sub-heading">Infomation</div>
             <div Style="padding:1em;">
-
               This app is in development. Check back for updates!
             </div>
           </div>

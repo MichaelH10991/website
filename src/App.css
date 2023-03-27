@@ -31,10 +31,19 @@
   margin: 0% 10% 0% 10%;
 }
 
-.Header {
+/* .Header {
   color: rgb(0, 0, 0);
   font-size: 2em;
   text-align: left;
+} */
+
+.Header {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .Skill {
@@ -45,11 +54,11 @@
 .Content-container {
   background-color: #4c4c4c;
   border-radius: 11px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   display: flow-root; /* makes it so the top and bottom are inside the parent container? */
-  margin-bottom: 1em
-} 
-
+  margin-bottom: 1em;
+}
 
 .Sub-container {
   border-style: solid;
@@ -57,6 +66,12 @@
   border-radius: 11px;
   border-color: #f46060;
   margin: 11px;
+}
+
+.Sub-heading {
+  text-align: left;
+  margin: 0.5em;
+  font-size: 1.5em;
 }
 
 .App-link {
