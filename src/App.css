@@ -64,7 +64,7 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 11px;
-  border-color: #f46060;
+  border-color: #795eb0;
   margin: 11px;
 }
 
@@ -72,6 +72,11 @@
   text-align: left;
   margin: 0.5em;
   font-size: 1.5em;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .App-link {

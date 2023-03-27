@@ -26,7 +26,7 @@ const skills = [
 const Skills = () => {
   return skills.map(item => {
    return (
-     <div className="Skill">
+     <div key={item.name} className="Skill">
       <Card 
         skillName={item.name}
         level={item.level}

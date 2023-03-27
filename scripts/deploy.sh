@@ -1,4 +1,6 @@
 #!/bin/bash
+timestamp=$(date)
+export REACT_APP_TIMESTAMP=$timestamp
 
 BUCKET="s3://mike-bucket-foo/"
 
