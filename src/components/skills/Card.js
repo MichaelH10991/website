@@ -10,14 +10,11 @@ import { paragraph } from "../data";
 export default function BasicCard(props) {
   const { skillName, level, additionalInfo } = props;
   const [flipped, setFlipped] = useState(false);
-  console.log(`flipped: ${flipped}`);
+
   return (
     <div className={`card ${flipped ? "flip" : ""}`}>
       <Card
         sx={{
-          // minWidth: 275,
-          // maxWidth: 275,
-          // minHeight: 171,
           backgroundColor: "#a9a7a7",
           color: "#fff",
         }}
@@ -41,9 +38,6 @@ export default function BasicCard(props) {
       </Card>
       <Card
         sx={{
-          // minWidth: 275,
-          // maxWidth: 275,
-          // minHeight: 171,
           backgroundColor: "#a9a7a7",
           color: "#fff",
         }}

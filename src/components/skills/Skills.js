@@ -1,7 +1,6 @@
 import Card from "./Card";
-import { skills } from "../data";
 
-const Skills = () => {
+const Skills = ({ skills }) => {
   return skills.map((item) => {
     return (
       <div key={item.name} className="Skill-grid">

@@ -3,7 +3,6 @@ html {
 }
 
 .App {
-  text-align: center;
   background-color: #c0c0c0;
   min-height: 100vh;
 }
@@ -11,6 +10,11 @@ html {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.content {
+  padding: 1em;
+  color: #b292d2;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -42,6 +46,7 @@ html {
 } */
 
 .Header {
+  text-align: center;
   font-size: 70px;
   font-weight: 600;
   background-image: linear-gradient(to left, #553c9a, #b393d3);
@@ -58,6 +63,7 @@ html {
 }
 
 .Skill-grid {
+  text-align: center;
   margin: 20px;
   display: inline-block;
 }
@@ -71,7 +77,7 @@ html {
 } */
 
 .Content-container {
-  background-color: #4c4c4c;
+  background-color: #1e1e1e;
   border-radius: 11px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -85,6 +91,10 @@ html {
   border-radius: 11px;
   border-color: #795eb0;
   margin: 11px;
+}
+
+.Sub-container .center {
+  text-align: center;
 }
 
 .Sub-heading {
