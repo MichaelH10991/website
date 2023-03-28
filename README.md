@@ -1,6 +1,6 @@
 # My Website
 
-The code for my static website which can be found here: http://michaeljh.com
+The code for my static website which can be found here: http://www.michaeljh.com
 
 # Scripts
 
