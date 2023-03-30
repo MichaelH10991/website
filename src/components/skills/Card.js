@@ -37,12 +37,14 @@ export default function BasicCard(props) {
       </Card>
       <Card sx={style} className="back" onClick={() => setFlipped(!flipped)}>
         <CardContent>
-          <Typography variant="subtitle1">Code</Typography>
+          <Typography variant="subtitle1">Projects</Typography>
           <Typography variant="body2">
             <ul style={{ textAlign: "left" }}>
-              {links.map((link) => (
+              {links.map(({ name = "", link = "" }) => (
                 <li>
-                  <Link>{link}</Link>
+                  <Link underline="none" target="_blank" href={`${link}`}>
+                    {name}
+                  </Link>
                 </li>
               ))}
             </ul>
