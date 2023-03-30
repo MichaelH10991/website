@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-// import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-import { paragraph, skills } from "../data";
-import { Link } from "@mui/material";
+import Rating from "./Rating";
+import List from "./List";
 
 const style = {
   backgroundColor: "#b393d3",
@@ -32,22 +31,14 @@ export default function BasicCard(props) {
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
             {level}
           </Typography>
+          <Rating />
         </CardContent>
-        {/* <CardActions>foo</CardActions> */}
       </Card>
       <Card sx={style} className="back" onClick={() => setFlipped(!flipped)}>
         <CardContent>
           <Typography variant="subtitle1">Projects</Typography>
           <Typography variant="body2">
-            <ul style={{ textAlign: "left" }}>
-              {links.map(({ name = "", link = "" }) => (
-                <li>
-                  <Link underline="none" target="_blank" href={`${link}`}>
-                    {name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <List links={links} />
           </Typography>
         </CardContent>
         <CardActions></CardActions>

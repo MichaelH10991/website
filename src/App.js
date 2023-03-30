@@ -14,27 +14,6 @@ const appStatus = process.env.REACT_APP_STATUS
 
 const appEnv = process.env.REACT_APP_ENV || "";
 
-const codeBlock = `
-~~~js
-  const experience = [
-    {
-      company: "Raytheon",
-      dateFrom: 2018,
-      dateTo: 2022,
-      jobTitle: "Junior developer",
-      jobDescription: "fullstack CI/CD developer on anlytics website."
-    },
-    {
-      company: "Raytheon",
-      dateFrom: 2022,
-      dateTo: 2023,
-      jobTitle: "Senior developer",
-      jobDescription: "fullstack CI/CD developer on anlytics website."
-    }
-  ]
-~~~
-`;
-
 const aboutMe = `
 ~~~js
   const me = () => ({
@@ -74,12 +53,12 @@ function App() {
           </Section>
           <Section header={"Education"}>
             <div className="content">
-              <h3>First Class with Honours in Computing - Cardiff </h3>
-              <p>{paragraph.big}</p>
-              <h3>3 A levels, Royal Forest of Dean College</h3>
-              <p>{paragraph.big}</p>
-              <h3>GCSE's</h3>
-              <p>{paragraph.big}</p>
+              <h3>Cardiff Metropolitan University</h3>
+              <p>First Class with Honours in Computing</p>
+              <h3>Royal Forest of Dean College</h3>
+              <p>3 A Levels</p>
+              <h3>Various Schools/academies</h3>
+              <p>GCSEs</p>
             </div>
           </Section>
           <Section header={"App Info"}>
