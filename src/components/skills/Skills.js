@@ -8,6 +8,7 @@ const Skills = ({ skills }) => {
           skillName={item.name}
           level={item.level}
           additionalInfo={item.additionalInfo}
+          links={item.links}
         />
       </div>
     );

@@ -2,8 +2,13 @@ html {
   height: 100%;
 }
 
+ul {
+  padding: 0px
+}
+
 .App {
   background-color: #c0c0c0;
+  background-image: linear-gradient(to left, #294a8f, #c3fbfd);
   min-height: 100vh;
 }
 
@@ -36,7 +41,7 @@ html {
 
 .App-content {
   min-height: 60vh;
-  margin: 0% 10% 0% 10%;
+  margin: 0% 20%;
 }
 
 /* .Header {
@@ -46,13 +51,16 @@ html {
 } */
 
 .Header {
+  /* -webkit-text-stroke: 1px rgb(225, 57, 57); */
   text-align: center;
   font-size: 70px;
   font-weight: 600;
-  background-image: linear-gradient(to left, #553c9a, #b393d3);
-  color: transparent;
+  /* background-image: linear-gradient(to left, #553c9a, #b393d3); */
+  /* color: transparent; */
   background-clip: text;
   -webkit-background-clip: text;
+  animation: moveInLeft 1s ease-out;
+  opacity: 1;
 }
 
 .p { 
@@ -125,7 +133,7 @@ html {
 .card {
   display: flex;
   transform-style: preserve-3d;
-  transition: 150ms;
+  transition: 400ms;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translate(var(--translate-y, 0));
   /* height: 250px; */
   /* width: 200px; */
