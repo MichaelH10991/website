@@ -1,5 +1,5 @@
 import { Skills, Header, Section } from "./components/";
-import { paragraph } from "./components/data";
+import { paragraph, skills } from "./components/data";
 
 import "./App.css";
 
@@ -21,22 +21,34 @@ function App() {
           <div className="Header">
             <Header />
           </div>
+          <Section header={"About Me"}>
+            <div className="content">{paragraph.big}</div>
+          </Section>
           <Section header={"Skills"}>
-            <Skills />
+            <div style={{ textAlign: "center" }}>
+              <Skills skills={skills} />
+            </div>
           </Section>
           <Section header={"Experience"}>
-            <div style={{ padding: 1 + "em" }}>{paragraph.big}</div>
+            <div className="content">{paragraph.big}</div>
           </Section>
           <Section header={"Education"}>
-            <div style={{ padding: 1 + "em" }}>{paragraph.big}</div>
+            <div className="content">{paragraph.big}</div>
           </Section>
           <Section header={"App Info"}>
-            <div style={{ padding: 0.5 + "em" }}>
+            <div className="content">
               {appStatus}
               <br />
               {info}
+              <br />
+              <div style={{ paddingLeft: 20 + "px", fontSize: 10 + "px" }}>
+                blind yet?
+              </div>
             </div>
           </Section>
+          <div style={{ color: "#c0c0c0" }}>
+            <br />
+          </div>
         </div>
       </div>
       {/* <div style={{ position: "absolute", bottom: 0, right: 0 }}>{appEnv}</div> */}

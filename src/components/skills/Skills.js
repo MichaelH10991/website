@@ -1,7 +1,6 @@
 import Card from "./Card";
-import { skills } from "../data";
 
-const Skills = () => {
+const Skills = ({ skills }) => {
   return skills.map((item) => {
     return (
       <div key={item.name} className="Skill-grid">
@@ -9,6 +8,7 @@ const Skills = () => {
           skillName={item.name}
           level={item.level}
           additionalInfo={item.additionalInfo}
+          links={item.links}
         />
       </div>
     );

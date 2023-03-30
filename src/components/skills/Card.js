@@ -5,25 +5,21 @@ import CardContent from "@mui/material/CardContent";
 // import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-import { paragraph } from "../data";
+import { paragraph, skills } from "../data";
+import { Link } from "@mui/material";
+
+const style = {
+  backgroundColor: "#b393d3",
+  color: "#fff",
+};
 
 export default function BasicCard(props) {
-  const { skillName, level, additionalInfo } = props;
+  const { skillName, level, additionalInfo, links } = props;
   const [flipped, setFlipped] = useState(false);
-  console.log(`flipped: ${flipped}`);
+
   return (
     <div className={`card ${flipped ? "flip" : ""}`}>
-      <Card
-        sx={{
-          // minWidth: 275,
-          // maxWidth: 275,
-          // minHeight: 171,
-          backgroundColor: "#a9a7a7",
-          color: "#fff",
-        }}
-        className="front"
-        onClick={() => setFlipped(!flipped)}
-      >
+      <Card sx={style} className="front" onClick={() => setFlipped(!flipped)}>
         <CardContent>
           <Typography
             sx={{ fontSize: 14 }}
@@ -37,21 +33,20 @@ export default function BasicCard(props) {
             {level}
           </Typography>
         </CardContent>
-        <CardActions></CardActions>
+        {/* <CardActions>foo</CardActions> */}
       </Card>
-      <Card
-        sx={{
-          // minWidth: 275,
-          // maxWidth: 275,
-          // minHeight: 171,
-          backgroundColor: "#a9a7a7",
-          color: "#fff",
-        }}
-        className="back"
-        onClick={() => setFlipped(!flipped)}
-      >
+      <Card sx={style} className="back" onClick={() => setFlipped(!flipped)}>
         <CardContent>
-          <Typography variant="body2">{paragraph.big}</Typography>
+          <Typography variant="subtitle1">Code</Typography>
+          <Typography variant="body2">
+            <ul style={{ textAlign: "left" }}>
+              {links.map((link) => (
+                <li>
+                  <Link>{link}</Link>
+                </li>
+              ))}
+            </ul>
+          </Typography>
         </CardContent>
         <CardActions></CardActions>
       </Card>
