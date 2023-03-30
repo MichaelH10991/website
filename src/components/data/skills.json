@@ -4,32 +4,43 @@
     "level": "Experienced",
     "additionalInfo": "some additonal info, some additonal info, some additonal info, some additonal info, some additonal info, some additonal info, ",
     "links": [
-      "https://github.com/MichaelH10991/api-creator",
-      "https://github.com/MichaelH10991/Algorithms"
+      {
+        "name": "api-creator",
+        "link": "https://github.com/MichaelH10991/api-creator"
+      },
+      {
+        "name": "Algorithms",
+        "link": "https://github.com/MichaelH10991/Algorithms"
+      }
     ]
   },
   {
     "name": "React.js",
     "level": "Intermediate",
     "additionalInfo": "some additonal info",
-    "links": ["https://github.com/MichaelH10991/website"]
+    "links": [
+      {
+        "name": "website",
+        "link": "https://github.com/MichaelH10991/website"
+      }
+    ]
   },
   {
     "name": "Mongodb",
     "level": "Adept",
     "additionalInfo": "some additonal info",
-    "links": ["https://"]
+    "links": []
   },
   {
     "name": "Docker",
     "level": "Adept",
     "additionalInfo": "some additonal info",
-    "links": ["https://"]
+    "links": []
   },
   {
     "name": "Linux",
     "level": "Adept",
     "additionalInfo": "some additonal info",
-    "links": ["https://"]
+    "links": []
   }
 ]

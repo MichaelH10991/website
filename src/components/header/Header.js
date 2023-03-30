@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
 const Header = () => {
-  const [name, setName] = useState("");
-
-  return <div className="Header">{name}</div>;
+  return <div className="Header">Michael Humphries</div>;
 };
 
 export default Header;

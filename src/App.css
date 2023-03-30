@@ -18,7 +18,7 @@ ul {
 }
 
 .content {
-  padding: 1em;
+  margin: 10px 12px 10px 12px;
   color: #b292d2;
 }
 
@@ -52,6 +52,7 @@ ul {
 
 .Header {
   /* -webkit-text-stroke: 1px rgb(225, 57, 57); */
+  padding: 10px;
   text-align: center;
   font-size: 70px;
   font-weight: 600;
