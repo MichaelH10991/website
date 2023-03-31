@@ -1,15 +1,9 @@
 import ReactMarkdown from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-// import { qtcreatorDark } from "react-syntax-highlighter/dist/cjs/styles/hljs/";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneLight } from "react-syntax-highlighter/dist/cjs/styles/hljs/";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const customDark = {
-  background: "#1e1e1e",
-  border: "none",
-  boxShadow: "none",
-};
-
-const CodeBlock = ({ codeBlock }) => {
+const CodeBlock = ({ codeBlock, customStyle, showLineNumbers }) => {
   return (
     <ReactMarkdown
       children={codeBlock}
@@ -19,9 +13,9 @@ const CodeBlock = ({ codeBlock }) => {
           return !inline && match ? (
             <SyntaxHighlighter
               children={String(children).replace(/\n$/, "")}
-              style={dark}
-              customStyle={customDark}
-              showLineNumbers={true}
+              style={atomOneLight}
+              customStyle={customStyle}
+              showLineNumbers={showLineNumbers || false}
               language={match[1]}
               PreTag="div"
               {...props}

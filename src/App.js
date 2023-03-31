@@ -17,24 +17,38 @@ const appEnv = process.env.REACT_APP_ENV || "";
 const aboutMe = `
 ~~~js
   const me = () => ({
-    name: "Michael Humphries",
+    fullName: "Michael Humphries",
     age: 26,
     email: "michaelhumphries1997@gmail.com"
   });
 ~~~
 `;
 
+const customDark = {
+  // background: "#1e1e1e",
+  fontSize: 1.5 + "em",
+  background: "transparent",
+  marginTop: 0 + "em",
+  border: "none",
+  boxShadow: "none",
+};
+
 function App() {
   return (
     <>
       <div className="App">
         <div className="App-content">
-          <div className="Header">
-            <Header />
+          <Header />
+          <div style={{ padding: 10 + "px" }}>
+            <CodeBlock codeBlock={aboutMe} customStyle={customDark} />
           </div>
           <Section header={"About Me"}>
-            <CodeBlock codeBlock={aboutMe} />
-            {/* <div className="content">{paragraph.big}</div> */}
+            {/* <CodeBlock
+              codeBlock={aboutMe}
+              customStyle={customDark}
+              showLineNumbers={true}
+            /> */}
+            <div className="content">{paragraph.big}</div>
           </Section>
           <Section header={"Skills"}>
             <div style={{ textAlign: "center" }}>

@@ -8,7 +8,7 @@ ul {
 
 .App {
   background-color: #c0c0c0;
-  background-image: linear-gradient(to left, #294a8f, #c3fbfd);
+  background-image: linear-gradient(to left, #030915, #ff647f);
   min-height: 100vh;
 }
 
@@ -53,7 +53,7 @@ ul {
 .Header {
   /* -webkit-text-stroke: 1px rgb(225, 57, 57); */
   padding: 10px;
-  text-align: center;
+  text-align: left;
   font-size: 70px;
   font-weight: 600;
   /* background-image: linear-gradient(to left, #553c9a, #b393d3); */
