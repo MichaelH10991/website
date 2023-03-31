@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  width: 100%;
 }
 
 ul {
@@ -8,8 +9,9 @@ ul {
 
 .App {
   background-color: #c0c0c0;
-  background-image: linear-gradient(to left, #030915, #ff647f);
+  background-image: linear-gradient(to left, #0036a2, #ff002c);
   min-height: 100vh;
+  min-width: 100vh;
 }
 
 .App-logo {
@@ -41,7 +43,7 @@ ul {
 
 .App-content {
   min-height: 60vh;
-  margin: 0% 20%;
+  margin: 0% 15%;
 }
 
 /* .Header {

@@ -1,6 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneLight } from "react-syntax-highlighter/dist/cjs/styles/hljs/";
+import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/hljs/";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const CodeBlock = ({ codeBlock, customStyle, showLineNumbers }) => {
@@ -10,13 +10,23 @@ const CodeBlock = ({ codeBlock, customStyle, showLineNumbers }) => {
       components={{
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || "");
+          console.log(match);
           return !inline && match ? (
             <SyntaxHighlighter
               children={String(children).replace(/\n$/, "")}
-              style={atomOneLight}
+              style={nightOwl}
               customStyle={customStyle}
               showLineNumbers={showLineNumbers || false}
               language={match[1]}
+              lineProps={(lineNumber) => {
+                let style = { display: "block" };
+                if ([1].includes(lineNumber)) {
+                  style.backgroundColor = "#dbffdb";
+                } else if ([2].includes(lineNumber)) {
+                  style.backgroundColor = "#ffecec";
+                }
+                return { style };
+              }}
               PreTag="div"
               {...props}
             />

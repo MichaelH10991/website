@@ -12,7 +12,8 @@
         "name": "Algorithms",
         "link": "https://github.com/MichaelH10991/Algorithms"
       }
-    ]
+    ],
+    "rating": 4.5
   },
   {
     "name": "React.js",
@@ -23,24 +24,28 @@
         "name": "website",
         "link": "https://github.com/MichaelH10991/website"
       }
-    ]
+    ],
+    "rating": 3
   },
   {
     "name": "Mongodb",
     "level": "Adept",
     "additionalInfo": "some additonal info",
-    "links": []
+    "links": [],
+    "rating": 2
   },
   {
     "name": "Docker",
     "level": "Adept",
     "additionalInfo": "some additonal info",
-    "links": []
+    "links": [],
+    "rating": 3
   },
   {
     "name": "Linux",
     "level": "Adept",
     "additionalInfo": "some additonal info",
-    "links": []
+    "links": [],
+    "rating": 2
   }
 ]

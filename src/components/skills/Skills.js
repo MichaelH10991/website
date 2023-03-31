@@ -9,6 +9,7 @@ const Skills = ({ skills }) => {
           level={item.level}
           additionalInfo={item.additionalInfo}
           links={item.links}
+          rating={item.rating}
         />
       </div>
     );

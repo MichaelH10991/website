@@ -15,7 +15,7 @@ const appStatus = process.env.REACT_APP_STATUS
 const appEnv = process.env.REACT_APP_ENV || "";
 
 const aboutMe = `
-~~~js
+~~~javascript
   const me = () => ({
     fullName: "Michael Humphries",
     age: 26,
@@ -40,9 +40,13 @@ function App() {
         <div className="App-content">
           <Header />
           <div style={{ padding: 10 + "px" }}>
-            <CodeBlock codeBlock={aboutMe} customStyle={customDark} />
+            <CodeBlock
+              codeBlock={aboutMe}
+              customStyle={customDark}
+              showLineNumbers={true}
+            />
           </div>
-          <Section header={"About Me"}>
+          <Section header={"A Bit About Me"}>
             {/* <CodeBlock
               codeBlock={aboutMe}
               customStyle={customDark}

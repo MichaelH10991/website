@@ -13,12 +13,13 @@ const StyledRating = styled(Rating)({
   },
 });
 
-const MyRating = () => {
+const MyRating = ({ rating }) => {
+  console.log(rating);
   return (
     <StyledRating
       name="customized-color"
       readOnly={true}
-      defaultValue={2}
+      defaultValue={rating}
       getLabelText={(value) => `${value} Heart${value !== 1 ? "s" : ""}`}
       precision={0.5}
       icon={<FavoriteIcon fontSize="inherit" />}

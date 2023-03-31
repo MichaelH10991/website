@@ -13,7 +13,7 @@ const style = {
 };
 
 export default function BasicCard(props) {
-  const { skillName, level, additionalInfo, links } = props;
+  const { skillName, level, additionalInfo, links, rating } = props;
   const [flipped, setFlipped] = useState(false);
 
   return (
@@ -31,7 +31,7 @@ export default function BasicCard(props) {
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
             {level}
           </Typography>
-          <Rating />
+          <Rating rating={rating} />
         </CardContent>
       </Card>
       <Card sx={style} className="back" onClick={() => setFlipped(!flipped)}>
