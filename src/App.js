@@ -1,4 +1,4 @@
-import { Skills, Header, Section, CodeBlock } from "./components/";
+import { Skills, Header, Section, CodeBlock, FallingText } from "./components/";
 
 import { paragraph, skills } from "./components/data";
 
@@ -38,13 +38,8 @@ function App() {
     <>
       <div className="App">
         <div className="App-content">
-          <Header />
-          <div style={{ padding: 10 + "px" }}>
-            <CodeBlock
-              codeBlock={aboutMe}
-              customStyle={customDark}
-              showLineNumbers={true}
-            />
+          <div>
+            <Header />
           </div>
           <Section header={"A Bit About Me"}>
             {/* <CodeBlock
@@ -52,7 +47,20 @@ function App() {
               customStyle={customDark}
               showLineNumbers={true}
             /> */}
-            <div className="content">{paragraph.big}</div>
+            <div className="content">
+              <div style={{ padding: 10 + "px" }}>
+                <CodeBlock
+                  codeBlock={aboutMe}
+                  customStyle={customDark}
+                  showLineNumbers={true}
+                />
+              </div>
+              I am an entusiastic backend developer but I love writing all types
+              of code and and solving difficult problems. I have 5 years web
+              development experience, writing and maintaining websites in in
+              HTML, CSS, JavaScript and React.js. with Node.js and Docker
+              backend hosted with on-prem and aws.
+            </div>
           </Section>
           <Section header={"Skills"}>
             <div style={{ textAlign: "center" }}>
@@ -62,11 +70,11 @@ function App() {
           <Section header={"Experience"}>
             <div className="content">
               <h3>Senior Software Developer - Raytheon - 2022 - 2023</h3>
-              <p>{paragraph.big}</p>
+              {/* <p>{paragraph.big}</p> */}
               <h3>Software Developer - Raytheon - 2019 - 2022</h3>
-              <p>{paragraph.big}</p>
+              {/* <p>{paragraph.big}</p> */}
               <h3>Junior Software Developer - Raytheon - 2018 - 2019</h3>
-              <p>{paragraph.big}</p>
+              {/* <p>{paragraph.big}</p> */}
             </div>
           </Section>
           <Section header={"Education"}>

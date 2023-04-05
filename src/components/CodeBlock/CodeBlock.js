@@ -1,7 +1,8 @@
 import ReactMarkdown from "react-markdown";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/hljs/";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs/";
+import { zTouch } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const CodeBlock = ({ codeBlock, customStyle, showLineNumbers }) => {
   return (

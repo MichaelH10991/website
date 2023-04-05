@@ -6,6 +6,8 @@ import Button from "@mui/material/Button";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+import "./skills.css";
+
 const ProjectList = ({ links }) => {
   return (
     <List dense={true}>
