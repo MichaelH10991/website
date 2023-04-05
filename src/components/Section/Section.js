@@ -1,3 +1,5 @@
+import "./section.css";
+
 const Section = ({ children, header }) => {
   return (
     <div className="Content-container">

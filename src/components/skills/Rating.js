@@ -4,6 +4,8 @@ import Rating from "@mui/material/Rating";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
+import "./skills.css";
+
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
     color: "#ff6d75",

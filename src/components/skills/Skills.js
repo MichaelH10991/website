@@ -1,5 +1,7 @@
 import Card from "./Card";
 
+import "./skills.css";
+
 const Skills = ({ skills }) => {
   return skills.map((item) => {
     return (

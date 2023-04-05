@@ -7,8 +7,10 @@ import Typography from "@mui/material/Typography";
 import Rating from "./Rating";
 import List from "./List";
 
+import "./skills.css";
+
 const style = {
-  backgroundColor: "#b393d3",
+  backgroundColor: "#ff0d0d",
   color: "#fff",
 };
 

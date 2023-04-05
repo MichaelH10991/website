@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+import "./header.css";
 
 const Header = () => {
   return (
-    <div className="Header">
-      <div style={{ paddingLeft: 157 + "px" }}>Hi,</div>
-      <div style={{ paddingLeft: 244 + "px" }}>I'm Mike.</div>
-      <div style={{ paddingLeft: 200 + "px", fontSize: 0.5 + "em" }}>
-        A Developer
-      </div>
+    <div className="Header1">
+      <div>Michael Humphries</div>
+      {/* <div className="sub">Developer</div> */}
+      {/* <div style={{ paddingLeft: 244 + "px", fontSize: 0.5 + "em" }}>
+        Developer
+      </div> */}
     </div>
   );
 };
